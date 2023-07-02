@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from "react";
 import get from "../utils/api";
+import Navbar from "./Navbar";
+import Table from "./Table";
 
-class Resources extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+function Resources() {
+  const classes = get("/courses");
+  const [id, setID] = useState(1);
 
-    render() {
-        return (
-            <div>
-                Create more components to render data
-            </div>
-        )
-    }
+  return (
+    <div>
+      <Navbar classes={classes} onNavBarClick={setID} />
+      <Table id={id} />
+    </div>
+  );
 }
 
 export default Resources;
