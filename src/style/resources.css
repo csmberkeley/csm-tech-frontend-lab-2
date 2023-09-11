@@ -1,0 +1,31 @@
+:root {
+    --csm-green: #9ae0b3;
+	--csm-green-darkened: #75b38a;
+	--csm-neutral: #c0c0c0;
+	--csm-neutral-darkened: #b6b6b6;
+	--csm-resources: #ededed;
+}
+
+body {
+    background-color: var(--csm-green);
+}
+
+.rowContainer {
+	background-color: var(--csm-resources);
+	border-radius: 8px;
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 0 -1px rgb(0 0 0 / 6%);
+	height: 100%;
+	margin: 16px auto;
+    padding: 24px 0;
+    display: flex;
+}
+
+.tab {
+    background-color: var(--csm-neutral);
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-size: 16px;
+	margin: 8px;
+	padding: 16px;
+}
