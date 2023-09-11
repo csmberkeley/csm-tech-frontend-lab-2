@@ -1,10 +1,10 @@
 function Row({ date, topics, weekNum, worksheet }) {
   return (
-    <div>
-      <li>Week {weekNum}</li>
-      <li>{date}</li>
-      <li>{topics}</li>
-      <li>{worksheet}</li>
+    <div className="rowContainer">
+      <div className="small-col">Week {weekNum}</div>
+      <div className="small-col">{date}</div>
+      <div className="large-col">{topics}</div>
+      <div className="large-col">{worksheet}</div>
       <br></br>
     </div>
   );

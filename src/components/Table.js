@@ -5,8 +5,13 @@ import Row from "./Row";
 function Table({ id }) {
   const data = get("/resources" + id);
   return (
-    <div>
-      <Row date="Date" topics="Topics" weekNum="" worksheet="Worksheet" />
+    <div className="listContainer">
+      <div className="resourceWrapperHeader">
+          <div className="small-col">Week</div>
+          <div className="small-col">Date</div>
+          <div className="large-col">Topics</div>
+          <div className="large-col">Worksheet and Solutions</div>
+      </div>
       {data.map((x) => {
         return (
           <Row
